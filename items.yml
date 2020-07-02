@@ -1,0 +1,271 @@
+GameType:
+  Normal:
+    Name: (NORMAL_GUI)
+    Material: DIAMOND_SWORD
+    SlotNumber: 0
+  Combo:
+    Name: (COMBO_GUI)
+    Material: DIAMOND_CHESTPLATE
+    SlotNumber: 1
+  Build:
+    Name: (BUILD_GUI)
+    Material: LAVA_BUCKET
+    SlotNumber: 2
+  Soup:
+    Name: (SOUP_GUI)
+    Material: MUSHROOM_SOUP
+    SlotNumber: 3
+  Sumo:
+    Name: (SUMO_GUI)
+    Material: RAW_FISH
+    SlotNumber: 4
+  Koth:
+    Name: (KOTH_GUI)
+    Material: BLAZE_POWDER
+    SlotNumber: 8
+  Spleef:
+    Name: (SPLEEF_GUI)
+    Material: DIAMOND_SPADE
+    SlotNumber: 5
+  BedWars:
+    Name: (BEDWARS_GUI)
+    Material: BED
+    SlotNumber: 7
+  SkyWars:
+    Name: (SKYWARS_GUI)
+    Material: GRASS
+    SlotNumber: 6
+ChooseRank:
+  Ranked:
+    Name: (RANKED_GUI)
+    Material: DIAMOND_SWORD
+    SlotNumber: 0
+  Unranked:
+    Name: (UNRANKED_GUI)
+    Material: WOOD_SWORD
+    SlotNumber: 1
+ChooseKit:
+  KitsOption:
+    Name: (YES_GUI_ITEM)
+    Material: GOLDEN_APPLE
+    SlotNumber: 0
+  NoKitsOption:
+    Name: (NO_GUI_ITEM)
+    Material: GOLDEN_APPLE
+    SlotNumber: 1
+  IndividualKitsOption:
+    Name: (INDIVIDUAL_GUI_ITEM)
+    Material: APPLE
+    SlotNumber: 2
+Bots:
+  Easy:
+    Enabled: true
+    Name: (EASY_GUI_ITEM)
+    Material: STONE_SWORD
+    MaterialAmount: 1
+    SlotNumber: 1
+  Normal:
+    Enabled: true
+    Name: (NORMAL_GUI_ITEM)
+    Material: WOOD_SWORD
+    MaterialAmount: 1
+    SlotNumber: 3
+  Hard:
+    Enabled: true
+    Name: (HARD_GUI_ITEM)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 5
+  Expert:
+    Enabled: true
+    Name: (EXPERT_GUI_ITEM)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 7
+BotGUI:
+  OneVsOne:
+    Enabled: true
+    Name: (ONE_VS_ONE_GUI_ITEM)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 0
+    Commands: duelbot join 1v1
+  TwoVsTwo:
+    Enabled: true
+    Name: (TWO_VS_TWO_GUI_ITEM)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 1
+    Commands: duelbot join 2v2
+  ThreeVsThree:
+    Enabled: true
+    Name: (THREE_VS_THREE_GUI_ITEM)
+    Material: STONE_SWORD
+    MaterialAmount: 1
+    SlotNumber: 2
+    Commands: duelbot join 3v3
+BattleGUI:
+  OneVsOne:
+    Enabled: true
+    Name: (ONE_VS_ONE_GUI_ITEM)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 0
+    Commands: battle join 1v1
+  TwoVsTwo:
+    Enabled: true
+    Name: (TWO_VS_TWO_GUI_ITEM)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 1
+    Commands: battle join 2v2
+  ThreeVsThree:
+    Enabled: true
+    Name: (THREE_VS_THREE_GUI_ITEM)
+    Material: STONE_SWORD
+    MaterialAmount: 1
+    SlotNumber: 2
+    Commands: battle join 3v3
+  FFA:
+    Enabled: true
+    Name: (FFA_GUI_ITEM)
+    Material: WOOD_SWORD
+    MaterialAmount: 1
+    SlotNumber: 4
+    Commands: ffa join
+  Bots:
+    Enabled: true
+    Name: (PVPBOTS_GUI_ITEM)
+    Material: BLAZE_ROD
+    MaterialAmount: 1
+    SlotNumber: 5
+    Commands: duelbot
+  OneVsOnePlayer:
+    Enabled: true
+    Name: (DUELPLAYERS_GUI_ITEM
+    Material: NETHER_STAR
+    MaterialAmount: 1
+    SlotNumber: 8
+    Commands: duel fights
+RankedGUI:
+  OneVsOne:
+    Enabled: true
+    Name: (ONE_VS_ONE_GUI_ITEM)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 0
+    Commands: battle join 1v1
+  TwoVsTwo:
+    Enabled: true
+    Name: (TWO_VS_TWO_GUI_ITEM)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 1
+    Commands: battle join 2v2
+  ThreeVsThree:
+    Enabled: true
+    Name: (THREE_VS_THREE_GUI_ITEM)
+    Material: STONE_SWORD
+    MaterialAmount: 1
+    SlotNumber: 2
+    Commands: battle join 3v3
+  OneVsOnePlayer:
+    Enabled: true
+    Name: (DUELPLAYERS_GUI_ITEM)
+    Material: NETHER_STAR
+    MaterialAmount: 1
+    SlotNumber: 8
+    Commands: duel fights
+UnrankedGUI:
+  OneVsOne:
+    Enabled: true
+    Name: (ONE_VS_ONE_GUI_ITEM)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 0
+    Commands: battle join 1v1
+  TwoVsTwo:
+    Enabled: true
+    Name: (TWO_VS_TWO_GUI_ITEM)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 1
+    Commands: battle join 2v2
+  ThreeVsThree:
+    Enabled: true
+    Name: (THREE_VS_THREE_GUI_ITEM)
+    Material: STONE_SWORD
+    MaterialAmount: 1
+    SlotNumber: 2
+    Commands: battle join 3v3
+  OneVsOnePlayer:
+    Enabled: true
+    Name: (DUELPLAYERS_GUI_ITEM)
+    Material: NETHER_STAR
+    MaterialAmount: 1
+    SlotNumber: 8
+    Commands: duel fights
+McDuelsItemsOnJoin:
+  Item1:
+    Enabled: true
+    Name: (RANKED_GUI_JOIN_ITEMS)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 0
+    Commands: ranked
+  Item2:
+    Enabled: true
+    Name: (UNRANKED_GUI_JOIN_ITEMS)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 1
+    Commands: unranked
+  Item3:
+    Enabled: false
+    Name: Nothing
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 2
+    Commands: ''
+  Item4:
+    Enabled: true
+    Name: (FFA_GUI_JOIN_ITEMS)
+    Material: WOOD_SWORD
+    MaterialAmount: 1
+    SlotNumber: 3
+    Commands: ffa join
+  Item5:
+    Enabled: true
+    Name: (PVPBOTS_GUI_JOIN_ITEMS)
+    Material: BLAZE_ROD
+    MaterialAmount: 1
+    SlotNumber: 4
+    Commands: duelbot
+  Item6:
+    Enabled: true
+    Name: (DUELPLAYERS_GUI_JOIN_ITEMS)
+    Material: NETHER_STAR
+    MaterialAmount: 1
+    SlotNumber: 5
+    Commands: duel fights
+  Item7:
+    Enabled: false
+    Name: Nothing
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 6
+    Commands: ''
+  Item8:
+    Enabled: true
+    Name: (SETTINGS_GUI_JOIN_ITEMS)
+    Material: BOOK
+    MaterialAmount: 1
+    SlotNumber: 7
+    Commands: duelsettings
+  Item9:
+    Enabled: true
+    Name: (KITEDITOR_GUI_JOIN_ITEMS)
+    Material: ANVIL
+    MaterialAmount: 1
+    SlotNumber: 8
+    Commands: kiteditor

@@ -1,0 +1,17 @@
+LobbyEnabled: false
+RandomArenas: true
+DisableBattle1v1: false
+DisableBattle2v2: false
+DisableBattle3v3: false
+GameTypeGUI:
+  NormalMode: true
+  BuildMode: true
+  ComboMode: true
+  SoupMode: true
+  SumoMode: true
+  SpleefMode: true
+  SkyWarsMode: true
+  BedWarsMode: true
+  KothMode: true
+EnableCommands:
+- msg

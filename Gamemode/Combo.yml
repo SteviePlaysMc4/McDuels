@@ -1,0 +1,47 @@
+ComboModeEnabled: true
+HealthRegen: true
+HungerLoss: true
+Combo: 2
+CustomDamage: false
+DuelChatEnabled: true
+RemovePotionBottles: true
+LeaveRankedGames: false
+LeaveUnrankedGames: true
+TeleportBeforeGame: false
+EnderPearlInGame: true
+EnderPearlCoolDown: true
+EnderPearlCoolDownAmount: 10
+AllowChestOpen: false
+AllowBroadCastMessage: true
+HealthShown: true
+PvPProtectionOnSpawn: 3
+EnableTeams: true
+ScoreBoardEnabled: true
+SpectateAfterGame: true
+SoundsEnabled: true
+MobDamageAllowed: false
+TeleportToEndSpawnAfterGame: true
+EnableFlyAfterDeath: true
+StartCountDown: 5
+EndCountDown: 120
+DisableBlockBreak: true
+DisableBlockPlace: true
+DisableCommands: true
+DisableItemDrop: true
+DisableItemPickUp: true
+DisableFallDamage: false
+SpectateEnableFly: true
+SpectateDisableBlockPlace: true
+SpectateDisableBlockBreak: true
+SpectateDisablePlayerPickup: true
+SpectateDisablePlayerFallDamage: true
+SpectateDisableCommands: true
+RankedOrUnrankedGUI:
+  Ranked: true
+  Unranked: true
+KitsGUI:
+  Kits: true
+  NoKits: true
+  IndividualKits: true
+EnableCommands:
+- msg

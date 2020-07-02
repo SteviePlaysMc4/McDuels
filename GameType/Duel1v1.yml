@@ -1,0 +1,110 @@
+RightClickShift: true
+CancelOnMove: false
+RandomArenas: true
+BetCountDown: 4
+CurrencyBetAllowed: true
+CurrencyBetAmount: 100
+DisableXpLost: false
+XpBetAllowed: true
+XpBetAmount: 10
+RequestCountDown: 20
+DisableDuel1v1: false
+DuelToggleEnabled: true
+GameSettingsGUI:
+  Enabled: true
+  Lives:
+    Allowed: true
+    Number: 1
+  Rounds:
+    Allowed: true
+    Number: 1
+  GiveBacks:
+    Allowed: true
+    Enabled: false
+  Bets:
+    Allowed: true
+    Enabled: false
+GameTypeGUI:
+  NormalMode: true
+  BuildMode: true
+  ComboMode: true
+  SoupMode: true
+  SumoMode: true
+  SpleefMode: true
+  SkyWarsMode: true
+  BedWarsMode: true
+  KothMode: true
+RankedOrUnrankedGUI:
+  Ranked: true
+  Unranked: true
+KitsGUI:
+  Kits: true
+  NoKits: true
+  IndividualKits: true
+RulesGUI:
+  Enabled: true
+  Swords:
+    Allowed: true
+    PlayersEdit: true
+  Axe:
+    Allowed: true
+    PlayersEdit: true
+  Bows:
+    Allowed: true
+    PlayersEdit: true
+  Fist:
+    Allowed: true
+    PlayersEdit: true
+  FishingRod:
+    Allowed: true
+    PlayersEdit: true
+  EnderPearl:
+    Allowed: true
+    PlayersEdit: true
+  HungerLoss:
+    Allowed: true
+    PlayersEdit: true
+  Helmets:
+    Allowed: true
+    PlayersEdit: true
+  ChestPlates:
+    Allowed: true
+    PlayersEdit: true
+  Leggings:
+    Allowed: true
+    PlayersEdit: true
+  Boots:
+    Allowed: true
+    PlayersEdit: true
+  Repair:
+    Allowed: false
+    PlayersEdit: true
+  Fly:
+    Allowed: false
+    PlayersEdit: true
+  Explosions:
+    Allowed: true
+    PlayersEdit: true
+  GoldenApple:
+    Allowed: true
+    PlayersEdit: true
+  Eggs:
+    Allowed: true
+    PlayersEdit: true
+  SnowBalls:
+    Allowed: true
+    PlayersEdit: true
+  FireBalls:
+    Allowed: true
+    PlayersEdit: true
+  SpawnEgg:
+    Allowed: true
+    PlayersEdit: true
+  Potion:
+    Allowed: true
+    PlayersEdit: true
+  SplashPotion:
+    Allowed: true
+    PlayersEdit: true
+EnableCommands:
+- msg

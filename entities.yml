@@ -1,0 +1,330 @@
+#The items that will be shown when selecting a entity to go up against
+#Eggs or Skulls
+GUIType: Eggs
+Prefix: "Bot"
+PlayerPvPBot:
+  Settings:
+    Enabled: true
+    AutoEquipArmor: true
+    SwitchFromMeleeToRange: true
+    UseSnowBalls: true
+    UseEgg: true
+    UseBow: true
+    #Bypass Potion drink delay
+    FastPotion: false
+    UseGolenApple: true
+    UseStrengthPotion: true
+    UseSpeedPotion: true
+    UseFireResistancePotion: true
+    UseSplashHealingPotion: true
+    UseSplashFireResistancePotion: true
+    UseSplashStrengthPotion: true
+    UseSplashSpeedPotion: true
+    UseSplashWeaknessPotion: true
+    UseSplashSlownessPotion: true
+    UseSplashPoisonPotion: true
+    #Used when NoKits is selected
+    UseBotKit: true
+    #Walk left to right
+    Strafe: true
+    #Jump 
+    Crit: true
+    #Horizontal knockback
+    KnockBackAmount: -0.2
+    #Vertical knockback
+    KnockBackAmountUpward: -0.5
+    Soup:
+      Use: true
+      Health: 3
+  Easy:
+    AttackDelayTicks: 16
+    AttackRangeDelayTicks: 26
+  Normal:
+    AttackDelayTicks: 12
+    AttackRangeDelayTicks: 24
+  Hard:
+    AttackDelayTicks: 8
+    AttackRangeDelayTicks: 22
+  Expert:
+    AttackDelayTicks: 5
+    AttackRangeDelayTicks: 20
+    #Used when NoKits is selected
+  BotKit:
+      iteminhand:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_SWORD
+      helmet:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_HELMET
+      chestplate:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_CHESTPLATE
+      leggings:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_LEGGINGS
+      boots:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_BOOTS
+  #Key Name:Skin
+  Names:
+  - SteviePlaysMc:SteviePlaysMc
+  - Steve:Steve
+  - Notch:Notch
+  - Herobrine:Herobrine
+SkeletonPvPBot:
+# Effects are used randomly
+  Settings:
+    Enabled: true
+    DistanceFromPlayer: 150
+    UseKnockBackBow: true
+    UseFlameBow: true
+    UseWeaknessEffect: true
+    UseSlownessEffect: true
+    UsePoisonEffect: true
+  Easy:
+    Health: 20
+    AttackRangeDelayTicks: 20
+  Normal:
+    Health: 25
+    AttackRangeDelayTicks: 20
+  Hard:
+    Health: 30
+    AttackRangeDelayTicks: 20
+  Expert:
+    Health: 35
+    AttackRangeDelayTicks: 20
+  Names:
+  - Skeleton
+  - Shooter
+ZombiePvPBot:
+  Settings:
+    Enabled: true
+    AutoEquipArmor: true
+    FastPotion: false
+    UseStrengthPotion: true
+    UseSpeedPotion: true
+    UseSplashHealingPotion: true
+    #Used when NoKits is selected
+    UseBotKit: true
+    Soup:
+      Use: true
+      Health: 3
+  Easy:
+    Health: 20
+    AttackDelayTicks: 12
+  Normal:
+    Health: 25
+    AttackDelayTicks: 10
+  Hard:
+    Health: 30
+    AttackDelayTicks: 5
+  Expert:
+    Health: 35
+    AttackDelayTicks: 3
+    #Used when NoKits is selected
+  BotKit:
+    iteminhand:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_SWORD
+    helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_HELMET
+    chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+    leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+    boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_BOOTS
+  Names:
+  - Zombie
+  - Foamer
+  - Plunger
+SpiderPvPBot:
+  Settings:
+    Enabled: true
+    JumpOnHit: true
+    JumpVertical: 0.2
+  Easy:
+    Health: 20
+    Speed: 1
+    AttackDelayTicks: 20
+  Normal:
+    Health: 20
+    Speed: 1.1
+    AttackDelayTicks: 15
+  Hard:
+    Health: 25
+    Speed: 1.2
+    AttackDelayTicks: 10
+  Expert:
+    Health: 30
+    Speed: 1.3
+    AttackDelayTicks: 10
+  Names:
+  - Spider
+  - EightEye  
+CaveSpiderPvPBot:
+  Settings:
+    Enabled: true
+    JumpOnHit: true
+    JumpVertical: 0.3
+    PoisonEffect: true
+  Easy:
+    Health: 20
+    Speed: 1
+    AttackDelayTicks: 20
+  Normal:
+    Health: 20
+    Speed: 1.1
+    AttackDelayTicks: 15
+  Hard:
+    Health: 25
+    Speed: 1.2
+    AttackDelayTicks: 10
+  Expert:
+    Health: 30
+    Speed: 1.3
+    AttackDelayTicks: 10
+  Names:
+  - Spider
+  - EightEye    
+PigZombiePvPBot:
+  Settings:
+    Enabled: true
+    ItemInHand: GOLD_SWORD
+  Easy:
+    Health: 20
+    Speed: 1.3
+    AttackDelayTicks: 10
+    FireAspect: false
+    FireAspectLevel: 2
+    Sharpness: true
+    SharpnessLevel: 2
+    KnockBack: false
+    KnockBackLevel: 2
+  Normal:
+    Health: 25
+    Speed: 1.4
+    AttackDelayTicks: 6
+    FireAspect: false
+    FireAspectLevel: 2
+    Sharpness: true
+    SharpnessLevel: 3
+    KnockBack: false
+    KnockBackLevel: 2
+  Hard:
+    Health: 30
+    Speed: 1.5
+    AttackDelayTicks: 5
+    FireAspect: true
+    FireAspectLevel: 2
+    Sharpness: true
+    SharpnessLevel: 5
+    KnockBack: false
+    KnockBackLevel: 2
+  Expert:
+    Health: 35
+    Speed: 1.6
+    AttackDelayTicks: 0
+    FireAspect: true
+    FireAspectLevel: 2
+    Sharpness: true
+    SharpnessLevel: 5
+    KnockBack: true
+    KnockBackLevel: 1
+  Names:
+  - PigZombie
+  - AngryGuy
+IronGolemPvPBot:
+  Settings:
+    Enabled: true
+  Easy:
+    Health: 20
+    AttackDelayTicks: 15
+  Normal:
+    Health: 30
+    AttackDelayTicks: 10
+  Hard:
+    Health: 40
+    AttackDelayTicks: 7
+  Expert:
+    Health: 50
+    AttackDelayTicks: 5
+  Names:
+  - IronGolem
+  - Golem 
+SlimePvPBot:
+  Settings:
+    Enabled: true
+    JumpDelay: 25
+    JumpVertical: 0.3
+  Easy:
+    Health: 20
+    Speed: 0.5
+    AttackDelayTicks: 20
+  Normal:
+    Health: 20
+    Speed: 0.5
+    AttackDelayTicks: 15
+  Hard:
+    Health: 25
+    Speed: 0.7
+    AttackDelayTicks: 10
+  Expert:
+    Health: 30
+    Speed: 0.7
+    AttackDelayTicks: 5
+  Names:
+  - Slim
+  - Slimmy
+WolfPvPBot:
+  Settings:
+    Enabled: true
+    #Walk left to right
+    Strafe: true 
+  Easy:
+    Health: 20
+    AttackDelayTicks: 20
+  Normal:
+    Health: 20
+    AttackDelayTicks: 15
+  Hard:
+    Health: 25
+    AttackDelayTicks: 10
+  Expert:
+    Health: 30
+    AttackDelayTicks: 10
+  Names:
+  - Wolf
+  - WareWolf
+WitchPvPBot:
+  Settings:
+    Enabled: true
+    #Walk away when using HealingPotion
+    WalkAway: true
+    #Strafe towards player allowing them to dodge bows
+    Strafe: true
+    #Effects are used Randomly
+    SlownessPotion: true
+    WeaknessPotion: true
+    PoisonPotion: true
+    HarmingPotion: true
+    HealingPotion: true
+  Easy:
+    Health: 20
+    ThrowDelayTicks: 15
+  Normal:
+    Health: 20
+    ThrowDelayTicks: 10
+  Hard:
+    Health: 25
+    ThrowDelayTicks: 7
+  Expert:
+    Health: 30
+    ThrowDelayTicks: 5
+  Names:
+  - Witch
+  - Witch      

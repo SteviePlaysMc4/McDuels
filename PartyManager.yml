@@ -1,0 +1,15 @@
+minPartyNameLength: 4
+maxPartyNameLength: 20
+maxPartyMembers: 4
+PartyRank1Name: Member
+PartyRank2Name: Veteran
+PartyRank3Name: Leader
+BlockedNames:
+- ass
+- fuck
+- bitch
+- dick
+- pussy
+- vagina
+- asshole
+- nigga

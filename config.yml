@@ -1,0 +1,36 @@
+SignPrefix: '&7[&bMcDuels&7]'
+NotifyPluginUpdates: true
+Language: En
+DatabaseType: SQLite
+mySqlHost: localhost
+mySqlPort: 3306
+mySqlDatabase: database
+mySqlUsername: database
+mySqlPassword: ''
+DisablePartyCommand: false
+DisableDuelPartyCommand: false
+DisableSpectateCommand: false
+DisableBattleCommand: false
+DisableDuelFightCommand: false
+DisableEloCommand: false
+DisableUnrankedCommand: false
+DisableRankedCommand: false
+DisableDuelBotCommand: false
+DisableLeaveCommand: false
+EnableCitizensHooks: true
+EnableCombatLogXHooks: true
+EnableCombatTagPlusHooks: true
+EnableEssentialsHooks: true
+EnableLeaderHeadsHooks: true
+EnablemcMMOHooks: true
+EnableMVdWPlaceHolderAPIHooks: true
+EnablePlaceHolderAPIHooks: true
+EnableVaultHooks: true
+EnableWorldEditHooks: true
+EnablePvPManagerHooks: true
+EnableMyPetsHooks: true
+WorldsDisabled:
+- World1
+- World2
+UnregisterCommands:
+- ''

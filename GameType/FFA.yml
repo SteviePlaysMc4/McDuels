@@ -1,0 +1,16 @@
+LobbyEnabled: false
+RandomArenas: true
+ffaMaxPlayers: 8
+ffaMinPlayers: 4
+ffaTotalLives: 2
+GameTypeGUI:
+  NormalMode: true
+  BuildMode: true
+  ComboMode: true
+  SoupMode: true
+  SumoMode: true
+  SpleefMode: true
+  SkyWarsMode: true
+  BedWarsMode: true
+EnableCommands:
+- msg
