@@ -1,13 +1,21 @@
-BuildModeEnabled: true
+Enabled: true
+GUIItem:
+  ==: org.bukkit.inventory.ItemStack
+  type: DIAMOND_SWORD
+GUISlot: 17
+GUIName: '&btest'
+GameMode: BEDWARS
 HealthRegen: true
 HungerLoss: true
-BreakArenaBlocks: true
 CustomDamage: false
 DuelChatEnabled: true
 RemovePotionBottles: true
 LeaveRankedGames: false
 LeaveUnrankedGames: true
 TeleportBeforeGame: false
+BreakArenaBlocks: true
+BreakGlassOnStart: false
+RespawnTime: 4
 HealthShotShown: true
 PlayerDamageSelf: true
 EnderPearlDamage: true
@@ -34,8 +42,9 @@ StartCountDown: 5
 EndCountDown: 120
 DisableCommands: true
 DisableItemDrop: true
-DisableItemPickUp: false
+DisableItemPickUp: true
 DisableFallDamage: false
+SpectateEnableFly: true
 RankedOrUnrankedGUI:
   Ranked: true
   Unranked: true

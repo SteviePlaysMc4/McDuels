@@ -1,19 +1,36 @@
 McDuelsItemsOnJoin: false
+McDuelsItemsOnJoinTakeDamage: true
+McDuelsItemsOnJoinHungerLoss: true
 TeleportToEndSpawnAfterKitEditor: true
 TeleportToEndSpawnAfterSpectate: true
+DisplayEloAfterRankedGame: false
+InventoriesAfterGame: true
+CommandsInQueue: false
+EnderpearlExpCountDown: true
 GameTypeStats: true
+GlobalStats: true
+GlobalStatsGUI: GOLDEN_APPLE
 GameModeStats: true
 PlayersCreateGame: true
 TitleMessagesEnabled: true
 HidePlayersSettingsEnabled: false
 HideScoreBoardSettingsEnabled: true
+StrikeLightningOnDeath: true
 SoundsEnabled: true
 StartingElo: 500
 RankedKills: 5
-Ranks: &id001
+Ranks:
 - '&8Silver:0-400'
 - '&7Iron:401-650'
 - '&6Gold:651-799'
 - '&bDiamond:800-999'
 - '&2Emerald:1000-20000'
-DisableScoreBoardWorld: *id001
+DisableScoreBoardWorld:
+- World1
+- World2
+DisableMcDuelsItemsOnJoinWorld:
+- World1
+- World2
+CommandsWhenLeave:
+- ''
+- ''

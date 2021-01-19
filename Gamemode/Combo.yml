@@ -8,6 +8,15 @@ RemovePotionBottles: true
 LeaveRankedGames: false
 LeaveUnrankedGames: true
 TeleportBeforeGame: false
+HealthShotShown: true
+PlayerDamageSelf: true
+EnderPearlDamage: true
+ComboHitDelay: true
+CustomKnockBack: false
+VerticalKb: 0.87
+HorizontalKb: 0.8
+AirHorizontalKb: 0.95
+AirVerticalKb: 0.95
 EnderPearlInGame: true
 EnderPearlCoolDown: true
 EnderPearlCoolDownAmount: 10
@@ -24,18 +33,11 @@ TeleportToEndSpawnAfterGame: true
 EnableFlyAfterDeath: true
 StartCountDown: 5
 EndCountDown: 120
-DisableBlockBreak: true
-DisableBlockPlace: true
 DisableCommands: true
 DisableItemDrop: true
 DisableItemPickUp: true
 DisableFallDamage: false
 SpectateEnableFly: true
-SpectateDisableBlockPlace: true
-SpectateDisableBlockBreak: true
-SpectateDisablePlayerPickup: true
-SpectateDisablePlayerFallDamage: true
-SpectateDisableCommands: true
 RankedOrUnrankedGUI:
   Ranked: true
   Unranked: true

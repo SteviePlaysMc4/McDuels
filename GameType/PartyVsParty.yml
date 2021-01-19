@@ -2,5 +2,3 @@ RandomArenas: true
 RequestCountDown: 5
 PartyTeamKills: 25
 DisablePartyVsParty: false
-EnableCommands:
-- msg

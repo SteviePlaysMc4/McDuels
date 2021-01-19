@@ -67,7 +67,7 @@ ItalianMessages:
   PLAYER_LEFT_SPECPTATE: '&eNon stai più guardando'
   TIMES_UP: '&ATempo scaduto, non c''è nessun vincitore'
   SPECTATE_TIMES_UP: '&eTempo scaduto'
-  GAME_ENDED: '&CPartita finita'
+  GAME_ENDED: '&6Game Ended.'
   COMMANDSELF: '&cNon puoi farlo a te stesso'
   TARGET_OFFLINE: '&cPlayer non online!'
   ONLY_PLAYERS_COMMAND: '&cSolo i players possono eseguire questo comando'
@@ -332,22 +332,22 @@ ItalianMessages:
   PLAYER_WON_FFA: '&a%player% ha vinto la partita FFA'
   ELO_RESTARTED: '&aL''Elo di tutti i players è stato resettato'
   BRODCAST_DUEL1V1_WINNER_ELO: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%) &aha
-    vintocontro %looser%&b[%looserelo%] &c(%loosereloadded%)&a in %arena%'
-  BRODCAST_BATTLE1V1_WINNER_ELO: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%) &aha
-    vinto contro %looser%&b[%looserelo%] &c(%loosereloadded%) &aper il Team %team%'
-  BRODCAST_BATTLE2v2_WINNER_ELO: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
+    vintocontro %looser%&b[%looserelo%] &c(%loosereloadded%) &aat arena %arena%'
+  BRODCAST_BATTLE1V1_WINNER_ELO_NEW: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%)
+    &aha vinto contro %looser%&b[%looserelo%] &c(%loosereloadded%) &aat arena %arena%'
+  BRODCAST_BATTLE2v2_WINNER_ELO_NEW: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
     &6(%w2eloadded%) &aha vinto contro %l1%&b[%l1elo%] &c(%l1eloadded%), &a%l2%&b[%l2elo%]
-    &c(%l2eloadded%) &aper il team %team%'
-  BRODCAST_BATTLE3v3_WINNER_ELO: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
+    &c(%l2eloadded%) &aat arena %arena%'
+  BRODCAST_BATTLE3v3_WINNER_ELO_NEW: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
     &6(%w2eloadded%), &a%w3%&b[%w3elo%] &6(%w3eloadded%) &ahas won the game against
     %l1%&b[%l1elo%] &c(%l1eloadded%), %l2%&b[%l2elo%] &c(%l2eloadded%), &a%l3%&b[%l3elo%]
-    &6(%l3eloadded%) &afor the %team% Team'
-  BRODCAST_BATTLE1V1_WINNER_NOELO: '&a%winner% &aha vinto contro %looser% &aper il
-    team %team%'
-  BRODCAST_BATTLE2v2_WINNER_NOELO: '&a%w1% e %w2% hanno vinto contro %l1% e %l2% per
-    il team %team%'
-  BRODCAST_BATTLE3v3_WINNER_NOELO: '&a%w1%, %w2%, %w3% hanno vinto contro %l1%, %l2%,
-    %l3% per il team %team%'
+    &6(%l3eloadded%) &aat arena %arena%'
+  BRODCAST_BATTLE1V1_WINNER_NOELO_NEW: '&a%winner% &aha vinto contro %looser% &aat
+    arena %arena%'
+  BRODCAST_BATTLE2v2_WINNER_NOELO_NEW: '&a%w1% e %w2% &ahanno vinto contro %l1% e
+    %l2% &aat arena %arena%'
+  BRODCAST_BATTLE3v3_WINNER_NOELO_NEW: '&a%w1%, %w2%, %w3% &ahanno vinto contro %l1%,
+    %l2%, %l3% &aat arena %arena%'
   SAVED_SCHEMATIC: '&aSchematic salvata'
   WORLDEDIT_NOT_FOUND: '&CWorldEdit non trovato'
   CITIZENS_NOT_FOUND: '&CCitizens non trovato'
@@ -515,12 +515,12 @@ ItalianMessages:
   RANKED_MESSAGE: Classificata
   UNRANKED_MESSAGE: Libera
   BUILD_MESSAGE: Build
-  NORMAL_MESSAGE: Normale
+  NORMAL_MESSAGE: Normal
   COMBO_MESSAGE: Combo
-  SOUP_MESSAGE: Zuppe
+  SOUP_MESSAGE: Soup
   SUMO_MESSAGE: Sumo
-  ENABLED_MESSAGE: Abilitata
-  DISABLED_MESSAGE: Disabilitata
+  ENABLED_MESSAGE: Abilitato
+  DISABLED_MESSAGE: Disabilitato
   NOKITS_MESSAGE: '&4&LNo Kits'
   INDIVIDUALKITS_MESSAGE: '&b&lKits Individuali'
   DUEL1V1_MESSAGE_START: '&8=================================='
@@ -562,3 +562,93 @@ ItalianMessages:
   KITEDITOR_SAVE: '&aKit Salvato'
   KITEDITOR_LEAVE: '&aHai lasciato il kit editor'
   KITEDITOR_SELECT: '&aKit %kit% selezionato'
+  KOTH_GUI: '&bKoth'
+  SPLEEF_GUI: '&bSpleef'
+  BEDWARS_GUI: '&bBedWars'
+  SKYWARS_GUI: '&bSkyWars'
+  GAMEMODE_ELO: '&bIl yuo Elo in %gamemode% è cambiato: %amount%'
+  PVPBOTS_GUI_ITEM: '&bPvP Bots'
+  DUELPLAYERS_GUI_ITEM: '&bSfida Giocatore'
+  THREE_VS_THREE_GUI_ITEM: '&B3v3'
+  TWO_VS_TWO_GUI_ITEM: '&B2v2'
+  ONE_VS_ONE_GUI_ITEM: '&b1v1'
+  FFA_GUI_ITEM: '&BFFA'
+  EASY_GUI_ITEM: '&bFacile'
+  NORMAL_GUI_ITEM: '&bNormale'
+  HARD_GUI_ITEM: '&bDifficile'
+  EXPERT_GUI_ITEM: '&bEsperto'
+  RANKED_GUI_JOIN_ITEMS: '&b&lClassificata'
+  UNRANKED_GUI_JOIN_ITEMS: '&b&lLibera'
+  FFA_GUI_JOIN_ITEMS: '&a&lFFA'
+  PVPBOTS_GUI_JOIN_ITEMS: '&a&lPvP Bots'
+  DUELPLAYERS_GUI_JOIN_ITEMS: '&a&lSfida Giocatore'
+  SETTINGS_GUI_JOIN_ITEMS: '&e&lImpostazioni'
+  KITEDITOR_GUI_JOIN_ITEMS: '&e&lSistema Kit'
+  SPLEEF_MESSAGE: Spleef
+  SKYWARS_MESSAGE: SkyWars
+  BEDWARS_MESSAGE: BedWars
+  KOTH_MESSAGE: Koth
+  NOT_FOR_GAMEMODE: '&cNon puoi usare questa Arena per questa modalità'
+  CORNER_SET: '&eAngolo %num% impostato'
+  BED_SET: '&eLetto %num% impostato'
+  NOT_A_BLOCK: '&cClicca su un blocco!'
+  CLICK_A_BLOCK: '&EClicca su un blocco!'
+  NOT_BEDWARS_ARENA: '&EQuetsa non è un''arena bedwars'
+  NOT_KOTH_ARENA: '&EQuesta non è un''arena Koth'
+  TITLE_GO: '&aVIA!'
+  TITLE_TEAM_LOST: '&cIl tuo team ha perso'
+  TITLE_TEAM_WON: '&aIl tuo team ha vinto'
+  TITLE_DIED: '&cSei morto'
+  SUBTITLE_ELIMINATED_BY: '%player% ti ha eliminato'
+  SUBTITLE_ELIMINATED: Sei stato eliminato
+  TITLE_RESPAWNING: '&c&lRespawining'
+  SUBTITLE_RESPAWNING_TIME: Tra %time% secondi sarai nuovamente in campo
+  KOTH_CAPTURED_TEAM: Il team %team% &7ha il KOTH
+  KOTH_CAPTURED_PLAYER: '%player% &7ha il KOTH'
+  KOTH_LOST_CONTROL_TEAM: Il team %team% &7ha perso il KOTH
+  KOTH_LOST_CONTROL_PLAYER: '%player% &7ha perso il KOTH'
+  PLAYER_KILLED_BY: '%killer% &7ha ucciso %player%'
+  PLAYER_ELIMINATED_BY: '%player% &7ha eliminato %killer%'
+  PLAYER_DIED: '%player% &7è morto'
+  PLAYER_ELIMINATED: '%player% &7eliminato'
+  BED_DESTROYED_TITLE: '&c&lDestroyed'
+  BED_DESTROYED_SUBTITLE_SOLO: Il tuo letto è stato distrutto da %player%
+  BED_DESTROYED_SUBTITLE: Il tuo letto è stato distrutto da %player%
+  BED_YOU_DESTROYED_TITLE: '&a&lDistrutto'
+  BED_YOU_DESTROYED_SUBTITLE_SOLO: Hai distrutto il letto di %player%
+  BED_YOU_DESTROYED_SUBTITLE: Hai distrutto il letto %team%
+  BED_DESTROYED: '&7Il team %team% &7è stato distrutto da %player%'
+  BED_DESTROYED_SOLO: '&7I l letto di %destroyedplayer% &7è stato distrutto da %player%'
+  COMMANDS_IN_QUEUE: '&cNon puoi usare il comando durante la coda'
+  ENDERPEARL_COOLDOWN_ACTIONBAR: '&bMancano: &c%cooldown% secondi'
+  ENDERPEARL_COOLDOWN_TEXT: '&cAspetta per usare le enderpearl'
+  NOT_BED: '&cQuesto non è un letto, guarda meglio!!'
+  SELECTION_CANCEL: '&cSelezione annullata'
+  LANGUAGE_RESET_ALL: '&aTutte le lingue vengono ripristinate %lang%'
+  TOTAL_KILLS_GUI: '&aTotal Kills: %amount%'
+  TOTAL_DEATHS_GUI: '&cTotal Deaths: %amount%'
+  TOTAL_WONS_GUI: '&aTotal Wons: %amount%'
+  TOTAL_LOSTS_GUI: '&cTotal Losts: %amount%'
+  TOTAL_ELO_GUI: '&eTotal Elo: %amount%'
+  MCDUELS_DISABLED: '&cMcDuels disabled'
+  MCDUELS_ENABLED: '&eMcDuels enabled'
+  ALL_STATS_RESET: '&eAll Stats Reset'
+  PLAYER_STATS_RESET: '&ePlayer %target% stats has been reset'
+  PLEASE_WAIT: '&ePlease Wait..'
+  RESET_PLAYER_ELO_NEW: '&aYour reset all %player% elo to its default amount'
+  GUI_ITEM_SET: '&eGUI Item Set'
+  REPLICATED_GAMEMODE_NOT_EXIST: '&cReplicated GameMode does not exist'
+  REPLICATED_GAMEMODE_EXIST: '&cReplicated GameMode exist'
+  GAMEMODE_NOT_EXIST: '&cThis GameMode does not exist'
+  NO_REPLICATED_GAMEMODE_FOUND: '&cNo Replicated GameMode found'
+  REPLICATED_GAMEMODE_CREATED: '&eReplicated GameMode %name% created'
+  REPLICATED_GAMEMODE_DELETED: '&eReplicated GameMode %name% deleted'
+  MUST_BE_INTEGER: '&cMust be an integer'
+  NEXT_PAGE_GUI: '&cNext Page'
+  PREVIOUS_PAGE_GUI: '&cPrevious Page'
+  PLAYERS_PAGE_GUI: '&CPlayers Page'
+  BOT_LEVEL_GUI: Bot Level
+  KIT_TYPE: Kit Type
+  CLICK_TO_JOIN: '&f&lClick To Join'
+  CLICK_TO_LEAVE: '&f&lClick To Leave'
+  TOP_STATS: '&a%number%: &f%name% &7- &a%amount%'

@@ -1,4 +1,538 @@
 kits:
+  NoDebuffsBot:
+    items:
+      item0:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 3
+            FIRE_ASPECT: 2
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: ENDER_PEARL
+        amount: 16
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 64
+      item3:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item4:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item5:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item6:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item7:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item8:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      item9:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item10:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item11:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item12:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item13:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item14:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item15:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item16:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item17:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      item18:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item19:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item20:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item21:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item22:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item23:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item24:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item25:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item26:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      item27:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item28:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item29:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item30:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item31:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item32:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item33:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item34:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item35:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+    helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    name: NoDebuffsBot
+    type: bot
+    guiitem:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+  DebuffsBot:
+    items:
+      item0:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 3
+            FIRE_ASPECT: 2
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: ENDER_PEARL
+        amount: 16
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 64
+      item3:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16426
+      item4:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16388
+      item5:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item6:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item7:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8227
+      item8:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      item9:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item10:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item11:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item12:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item13:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item14:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item15:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item16:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item17:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      item18:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item19:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item20:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item21:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item22:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item23:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item24:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item25:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item26:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      item27:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item28:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item29:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item30:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16426
+      item31:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16388
+      item32:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item33:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      item34:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8227
+      item35:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+    helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    name: DebuffsBot
+    type: bot
+    guiitem:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_SWORD
+  GappleBot:
+    items:
+      item0:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 5
+            DURABILITY: 3
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLDEN_APPLE
+        damage: 1
+        amount: 64
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 64
+      item3:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8290
+      item4:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8290
+      item5:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8297
+      item6:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8297
+    helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+    name: GappleBot
+    type: bot
+    guiitem:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      damage: 1
+  ArcherBot:
+    items:
+      item0:
+        ==: org.bukkit.inventory.ItemStack
+        type: IRON_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 1
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DURABILITY: 10
+            ARROW_INFINITE: 1
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+      item3:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16418
+      item4:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16418
+      item5:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16418
+      item6:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLDEN_APPLE
+        amount: 4
+      item7:
+        ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 64
+    helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 10
+    chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 10
+    leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 10
+    boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 10
+    name: ArcherBot
+    type: bot
+    guiitem:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOW
   NoDebuffs:
     items:
       item0:

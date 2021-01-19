@@ -34,13 +34,6 @@ GameTypeGUI:
   SkyWarsMode: true
   BedWarsMode: true
   KothMode: true
-RankedOrUnrankedGUI:
-  Ranked: true
-  Unranked: true
-KitsGUI:
-  Kits: true
-  NoKits: true
-  IndividualKits: true
 RulesGUI:
   Enabled: true
   Swords:
@@ -106,5 +99,3 @@ RulesGUI:
   SplashPotion:
     Allowed: true
     PlayersEdit: true
-EnableCommands:
-- msg

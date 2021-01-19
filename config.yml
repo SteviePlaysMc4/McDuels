@@ -1,5 +1,6 @@
 SignPrefix: '&7[&bMcDuels&7]'
 NotifyPluginUpdates: true
+McDuelsEnabled: true
 Language: En
 DatabaseType: SQLite
 mySqlHost: localhost

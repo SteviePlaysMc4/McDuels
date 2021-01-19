@@ -1,3 +1,4 @@
+saveParties: true
 minPartyNameLength: 4
 maxPartyNameLength: 20
 maxPartyMembers: 4

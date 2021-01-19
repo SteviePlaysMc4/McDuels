@@ -258,14 +258,78 @@ McDuelsItemsOnJoin:
   Item8:
     Enabled: true
     Name: (SETTINGS_GUI_JOIN_ITEMS)
-    Material: BOOK
+    Material: NAME_TAG
     MaterialAmount: 1
     SlotNumber: 7
     Commands: duelsettings
   Item9:
     Enabled: true
     Name: (KITEDITOR_GUI_JOIN_ITEMS)
-    Material: ANVIL
+    Material: BOOK
     MaterialAmount: 1
     SlotNumber: 8
     Commands: kiteditor
+McDuelsItemsOnJoinParty:
+  Item1:
+    Enabled: true
+    Name: (PARTY_VS_PARTY_ITEM)
+    Material: DIAMOND_CHESTPLATE
+    MaterialAmount: 1
+    SlotNumber: 0
+    Commands: duelparty fights
+  Item2:
+    Enabled: true
+    Name: (PARTY_BATTLE_ITEMS)
+    Material: IRON_CHESTPLATE
+    MaterialAmount: 1
+    SlotNumber: 1
+    Commands: duelparty battle
+  Item3:
+    Enabled: false
+    Name: Nothing
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 2
+    Commands: ''
+  Item4:
+    Enabled: true
+    Name: (RANKED_GUI_JOIN_ITEMS)
+    Material: DIAMOND_SWORD
+    MaterialAmount: 1
+    SlotNumber: 3
+    Commands: ranked
+  Item5:
+    Enabled: true
+    Name: (UNRANKED_GUI_JOIN_ITEMS)
+    Material: IRON_SWORD
+    MaterialAmount: 1
+    SlotNumber: 4
+    Commands: unranked
+  Item6:
+    Enabled: false
+    Name: Nothing
+    Material: NETHER_STAR
+    MaterialAmount: 1
+    SlotNumber: 5
+    Commands: ''
+  Item7:
+    Enabled: true
+    Name: (PARTY_INFO_ITEM)
+    Material: NETHER_STAR
+    MaterialAmount: 1
+    SlotNumber: 6
+    Commands: party info
+  Item8:
+    Enabled: true
+    Name: (PARTY_CHAT_ITEM)
+    Material: PAPER
+    MaterialAmount: 1
+    SlotNumber: 7
+    Commands: party chat
+  Item9:
+    Enabled: true
+    Name: (PARTY_LEAVE_ITEMS)
+    Material: MAGMA_CREAM
+    MaterialAmount: 1
+    SlotNumber: 8
+    Commands: party leave

@@ -1,827 +1,1376 @@
 Main-ScoreBoard:
   Use: false
-  Updating-Ticks: 100
+  Updating-Ticks: 0
   Title: '&b&lMcDuels'
   Lines:
-  - '&8----------------------'
-  - '&aUsername&8: &7(player_name)'
-  - '&aGlobalElo&8: &7(globalelo)'
   - (blank)
-  - '&aGlobal Kills&8: &7(kills)'
-  - '&aGlobal Deaths&8: &7(deaths)'
-  - '&aGlobal Wins&8: &7(wins)'
-  - '&aGlobal Lost&8: &7(lost)'
-  - '&aGlobal KDR&8: &7(kdr)'
+  - '&aUsername&8: &7(player_name)'
+  - '&aRank&8: &7(player_rank)'
+  - '&aGlobalElo&8: &7(global_elo)'
+  - (blank)
+  - '&aGlobal Kills&8: &7(global_kills)'
+  - '&aGlobal Deaths&8: &7(global_deaths)'
+  - '&aGlobal Wins&8: &7(global_wins)'
+  - '&aGlobal Lost&8: &7(global_lost)'
   - '&aDuelEnable&8: &7(duelenable)'
-  - '&8----------------------'
+  - (blank)
+MainParty-ScoreBoard:
+  Lines:
+  - (blank)
+  - '&aUsername&8: &7(player_name)'
+  - '&aRank&8: &7(player_rank)'
+  - '&aGlobalElo&8: &7(global_elo)'
+  - (blank)
+  - '&aGlobal Kills&8: &7(global_kills)'
+  - '&aGlobal Deaths&8: &7(global_deaths)'
+  - '&aGlobal Wins&8: &7(global_wins)'
+  - '&aGlobal Lost&8: &7(global_lost)'
+  - '&aDuelEnable&8: &7(duelenable)'
+  - (blank)
+  - '&aParty Owner: &7(party_owner)'
+  - '&aParty Members: &7(party_members_size)'
 Normal:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eNormal Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eNormal Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lNormal Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lNormal Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&7 (arena)'
+    - '&f&lKit:&7 (kit_name)'
+    - '&f&lType:&7 FFA'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
   DuelBot1v1-Game-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&7 (arena)'
+    - '&f&lKit:&7 (kit_name)'
+    - '&f&lType:&7 PvP-Bot'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤'
+    - (blank)
   DuelBot2v2-Queue-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a PvP-Bot'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   DuelBot2v2-Game-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&7 (arena)'
+    - '&f&lKit:&7 (kit_name)'
+    - '&f&lType:&7 PvP-Bot'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   DuelBot3v3-Queue-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a PvP-Bot'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
   DuelBot3v3-Game-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&7 (arena)'
+    - '&f&lKit:&7 (kit_name)'
+    - '&f&lType:&7 PvP-Bot'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Duel1v1-Rounds-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lRounds: &7(current_round)/(total_rounds)'
+    - '&c(player_one) Won: &7(player_one_rounds_won)'
+    - '&b(player_two) Won: &7(player_two_rounds_won)'
+    - (blank)
   Duel1v1-Lives-ScoreBoard:
-    Title: '&eNormal Mode'
+    Title: '&e&lNormal Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lLives'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lLives Remaining'
+    - '&e(player_one): &7(player_one_lives)'
+    - '&e(player_two): &7(player_two_lives)'
+    - (blank)
 Combo:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eCombo Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eCombo Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lCombo Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lCombo Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&a (arena)'
+    - '&f&lType:&7 FFA'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
   Duel1v1-Rounds-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lRounds: &7(current_round)/(total_rounds)'
+    - '&c(player_one) Won: &7(player_one_rounds_won)'
+    - '&b(player_two) Won: &7(player_two_rounds_won)'
+    - (blank)
   Duel1v1-Lives-ScoreBoard:
-    Title: '&eCombo Mode'
+    Title: '&e&lCombo Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lLives'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lLives Remaining'
+    - '&e(player_one): &7(player_one_lives)'
+    - '&e(player_two): &7(player_two_lives)'
+    - (blank)
 Build:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eBuild Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eBuild Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lBuild Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lBuild Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&a (arena)'
+    - '&f&lType:&7 FFA'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
   Duel1v1-Rounds-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lRounds: &7(current_round)/(total_rounds)'
+    - '&c(player_one) Won: &7(player_one_rounds_won)'
+    - '&b(player_two) Won: &7(player_two_rounds_won)'
+    - (blank)
   Duel1v1-Lives-ScoreBoard:
-    Title: '&eBuild Mode'
+    Title: '&e&lBuild Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lLives'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lLives Remaining'
+    - '&e(player_one): &7(player_one_lives)'
+    - '&e(player_two): &7(player_two_lives)'
+    - (blank)
 Soup:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eSoup Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eSoup Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lSoup Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lSoup Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&a (arena)'
+    - '&f&lType:&7 FFA'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
   Duel1v1-Rounds-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lRounds: &7(current_round)/(total_rounds)'
+    - '&c(player_one) Won: &7(player_one_rounds_won)'
+    - '&b(player_two) Won: &7(player_two_rounds_won)'
+    - (blank)
   Duel1v1-Lives-ScoreBoard:
-    Title: '&eSoup Mode'
+    Title: '&e&lSoup Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lLives'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lLives Remaining'
+    - '&e(player_one): &7(player_one_lives)'
+    - '&e(player_two): &7(player_two_lives)'
+    - (blank)
 Sumo:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eSumo Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eSumo Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lSumo Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lSumo Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lArena:&a (arena)'
+    - '&f&lType:&7 FFA'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
   Duel1v1-Rounds-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lRounds: &7(current_round)/(total_rounds)'
+    - '&c(player_one) Won: &7(player_one_rounds_won)'
+    - '&b(player_two) Won: &7(player_two_rounds_won)'
+    - (blank)
   Duel1v1-Lives-ScoreBoard:
-    Title: '&eSumo Mode'
+    Title: '&e&lSumo Mode'
     Lines:
-    - '&8--------------'
-    - '&b&lLives'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&6&lLives Remaining'
+    - '&e(player_one): &7(player_one_lives)'
+    - '&e(player_two): &7(player_two_lives)'
+    - (blank)
 Spleef:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eSpleef Mode'
+    Title: '&e&lSpleef Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eSpleef Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eSpleef Mode'
+    Title: '&e&lSpleef Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eSpleef Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eSpleef Mode'
+    Title: '&e&lSpleef Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lSpleef Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lSpleef Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eSpleef Mode'
+    Title: '&e&lSpleef Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eSpleef Mode'
+    Title: '&e&lSpleef Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eSpleef Mode'
+    Title: '&e&lSpleef Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
-  Duel1v1-Rounds-ScoreBoard:
-    Title: '&eSpleef Mode'
-    Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
-  Duel1v1-Lives-ScoreBoard:
-    Title: '&eSpleef Mode'
-    Lines:
-    - '&8--------------'
-    - '&b&lLives'
+    - '&f&lArena:&a (arena)'
+    - '&f&lType:&7 FFA'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
+  Duel1v1-ScoreBoard:
+    Title: '&e&LBedWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
 SkyWars:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eSkyWars Mode'
+    Title: '&e&lSkyWars Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eSkyWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eSkyWars Mode'
+    Title: '&e&lSkyWars Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eSkyWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eSkyWars Mode'
+    Title: '&e&lSkyWars Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lSkyWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - (blank)
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lSkyWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eSkyWars Mode'
+    Title: '&e&lSkyWars Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&a&lTeam Players:&7 (team_players)'
+    - '&c&lEnemy Team Players:&7 (enemy_team_players)'
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eSkyWars Mode'
+    Title: '&e&lSkyWars Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eSkyWars Mode'
+    Title: '&e&lSkyWars Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
-  Duel1v1-Rounds-ScoreBoard:
-    Title: '&eSkyWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
-  Duel1v1-Lives-ScoreBoard:
-    Title: '&eSkyWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&b&lLives'
+    - '&f&lArena:&a (arena)'
+    - '&f&lType:&7 FFA'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
+  Duel1v1-ScoreBoard:
+    Title: '&e&LBedWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
 BedWars:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eBedWars Mode'
+    Title: '&e&lBedWars Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
-    - '&8--------------'
-  Battle1v1-Game-ScoreBoard:
-    Title: '&eBedWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eBedWars Mode'
+    Title: '&e&lBedWars Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
-  Battle2v2-Game-ScoreBoard:
-    Title: '&eBedWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eBedWars Mode'
+    Title: '&e&lBedWars Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+  Battle1v1-Game-ScoreBoard:
+    Title: '&e&lBedWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - (red_status) &cRed
+    - (blue_status) &bBlue
+    - (blank)
+  Battle2v2-Game-ScoreBoard:
+    Title: '&e&lBedWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - (red_status) &cRed
+    - (blue_status) &bBlue
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eBedWars Mode'
+    Title: '&e&lBedWars Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&c(red_player_two)'
-    - '&c(red_player_three)'
-    - '&b(blue_player_one)'
-    - '&b(blue_player_two)'
-    - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - (red_status) &cRed
+    - (blue_status) &bBlue
+    - (blank)
   BattleFFA-Queue-ScoreBoard:
-    Title: '&eBedWars Mode'
+    Title: '&e&lBedWars Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fKit:&a (kit_name)'
+    - ' &fType:&a FFA'
+    - (blank)
+    - '&6&lPlayers: &7(ffa_players_remaining)/(ffa_players_max)'
+    - (blank)
   BattleFFA-Game-ScoreBoard:
-    Title: '&eBedWars Mode'
+    Title: '&e&lBedWars Mode'
     Lines:
-    - '&8--------------'
-    - '&b(all_ffa_players): (all_ffa_players_lives)'
-    - '&8--------------'
-  Duel1v1-Rounds-ScoreBoard:
-    Title: '&eBedWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&b&lRounds'
     - (blank)
-    - '&eTotalRounds: &7(total_rounds)'
-    - '&eCurrentRound: &7(current_round)'
-    - '&e(player_one)Rounds: &7(player_one_rounds_one)'
-    - '&e(player_two)Rounds: &7(player_two_rounds_one)'
-    - '&8--------------'
-  Duel1v1-Lives-ScoreBoard:
-    Title: '&eBedWars Mode'
-    Lines:
-    - '&8--------------'
-    - '&b&lLives'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 FFA'
     - (blank)
-    - '&eTotalLives&6: &7(total_lives)'
-    - '&e(player_one)Rounds: &7(player_one_lives_one)'
-    - '&e(player_two)Rounds: &7(player_two_lives_one)'
-    - '&8--------------'
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&6&lPlayers Remaining: &7(ffa_players_remaining)'
+    - (blank)
+  Duel1v1-ScoreBoard:
+    Title: '&e&LBedWars Mode'
+    Lines:
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - (player_one_bed) &c(player_one) Bed
+    - (player_two_bed) &b(player_two) Bed
+    - (blank)
 Koth:
   Battle1v1-Queue-ScoreBoard:
-    Title: '&eWaiting for Players'
+    Title: '&e&lKoth Mode'
     Lines:
-    - '&8--------------'
-    - '&c(red_player_one)'
-    - '&b(blue_player_one)'
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 1v1'
+    - (blank)
+    - '&6&lPlayers'
+    - ' &c(red_player_one)'
+    - ' &b(blue_player_one)'
+    - (blank)
   Battle1v1-Game-ScoreBoard:
-    Title: '&eKoth Mode'
+    Title: '&e&lKoth Mode'
     Lines:
-    - '&8--------------'
-    - '&aTime Remaining: (time_remaining)'
-    - '&cRed Team: (red_team_time)'
-    - '&bBlue Team: (blue_team_time)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&c&lRed:&7 (red_team_time)'
+    - '&b&lBlue:&7 (blue_team_time)'
+    - (blank)
   Battle2v2-Queue-ScoreBoard:
-    Title: '&eKoth Mode'
+    Title: '&e&lKoth Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 2v2'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
-    - '&8--------------'
+    - (blank)
   Battle2v2-Game-ScoreBoard:
-    Title: '&eKoth Mode'
+    Title: '&e&lKoth Mode'
     Lines:
-    - '&8--------------'
-    - '&aTime Remaining: (time_remaining)'
-    - '&cRed Team: (red_team_time)'
-    - '&bBlue Team: (blue_team_time)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 2v2'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&c&lRed:&7 (red_team_time)'
+    - '&b&lBlue:&7 (blue_team_time)'
+    - (blank)
   Battle3v3-Queue-ScoreBoard:
-    Title: '&eKoth Mode'
+    Title: '&e&lKoth Mode'
     Lines:
-    - '&8--------------'
+    - (blank)
+    - '&6&lQueue'
+    - ' &fArena:&a (arena)'
+    - ' &fRanked:&a (is_ranked)'
+    - ' &fType:&a 3v3'
+    - (blank)
+    - '&6&lPlayers'
     - '&c(red_player_one)'
     - '&b(blue_player_one)'
     - '&c(red_player_two)'
     - '&b(blue_player_two)'
     - '&c(red_player_three)'
     - '&b(blue_player_three)'
-    - '&8--------------'
+    - (blank)
   Battle3v3-Game-ScoreBoard:
-    Title: '&eKoth Mode'
+    Title: '&e&lKoth Mode'
     Lines:
-    - '&8--------------'
-    - '&aTime Remaining: (time_remaining)'
-    - '&cRed Team: (red_team_time)'
-    - '&bBlue Team: (blue_team_time)'
-    - '&8--------------'
-  Duel1v1-Rounds-ScoreBoard:
-    Title: '&a&LKoth'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 3v3'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&L(target_name)'
+    - '&c(target_health)❤ &7| &b(target_ping) ms'
+    - (blank)
+    - '&c&lRed:&7 (red_team_time)'
+    - '&b&lBlue:&7 (blue_team_time)'
+    - (blank)
+  Duel1v1-Koth-ScoreBoard:
+    Title: '&e&LKoth Mode'
+  Duel1v1-ScoreBoard:
     Lines:
-    - '&8--------------'
-    - '&aTime Remaining Time: &7(time_remaining)'
-    - '&e(player_one) Time: &7(player_one_time)'
-    - '&e(player_two) Time: &7(player_two_time)'
-    - '&8--------------'
+    - (blank)
+    - '&f&lTime Left:&7 (time_remaining)'
+    - '&f&lArena:&7 (arena)'
+    - '&f&lType:&7 Duel1v1'
+    - (blank)
+    - '&6&LYou'
+    - '&c(player_health)❤ &7| &b(player_ping) ms'
+    - '&6&l(opponent_name)'
+    - '&c(opponent_health)❤ &7| &b(opponent_ping) ms'
+    - (blank)
+    - '&c&l(player_one) Time:&7 (player_one_time)'
+    - '&b&l(player_two) Time:&7 (player_two_time)'
+    - (blank)

@@ -12,5 +12,3 @@ GameTypeGUI:
   SpleefMode: true
   SkyWarsMode: true
   BedWarsMode: true
-EnableCommands:
-- msg

@@ -67,7 +67,7 @@ ThaiMessages:
   PLAYER_LEFT_SPECPTATE: '&eคุณไม่ได้ชมอีกต่อไปแล้ว'
   TIMES_UP: '&Aเวลาได้หมดลงแล้ว ไม่มีผู้ชนะในการประลองครั้งนี้'
   SPECTATE_TIMES_UP: '&eการต่อสู้สิ้นสุดลงแล้ว'
-  GAME_ENDED: '&Cการประลองได้จบลงแล้ว'
+  GAME_ENDED: '&6Game Ended.'
   COMMANDSELF: '&cไม่สามารถใช้คำสั่งนี้กับตัวเองได้'
   TARGET_OFFLINE: '&cไม่สามารถทำการประลองกับผู้เล่นที่ Offline!'
   ONLY_PLAYERS_COMMAND: '&cมีแค่ผู้เล่นเท่านั้นที่สามารถใช้คำสั่งนี้อยู่'
@@ -326,22 +326,22 @@ ThaiMessages:
   PLAYER_WON_FFA: '&a%player% ได้รับชัยชนะในการประลองแบบ FFA'
   ELO_RESTARTED: '&aAll players Elo has restarted'
   BRODCAST_DUEL1V1_WINNER_ELO: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%) &aได้รับชัยชนะจาก
-    %looser%&b[%looserelo%] &c(%loosereloadded%)&a ที่สนาม %arena%'
-  BRODCAST_BATTLE1V1_WINNER_ELO: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%) &aได้รับชัยชนะจาก
-    %looser%&b[%looserelo%] &c(%loosereloadded%) &aสำหรับทีม %team%'
-  BRODCAST_BATTLE2v2_WINNER_ELO: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
+    %looser%&b[%looserelo%] &c(%loosereloadded%)&aที่เกิดเหตุ %arena%'
+  BRODCAST_BATTLE1V1_WINNER_ELO_NEW: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%)
+    &aได้รับชัยชนะจาก %looser%&b[%looserelo%] &c(%loosereloadded%) &aที่เกิดเหตุ%arena%'
+  BRODCAST_BATTLE2v2_WINNER_ELO_NEW: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
     &6(%w2eloadded%) &aได้รับชัยชนะจาก %l1%&b[%l1elo%] &c(%l1eloadded%), &a%l2%&b[%l2elo%]
-    &c(%l2eloadded%) &aสำหรับทีม %team%'
-  BRODCAST_BATTLE3v3_WINNER_ELO: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
+    &c(%l2eloadded%) &aที่เกิดเหตุ %arena%'
+  BRODCAST_BATTLE3v3_WINNER_ELO_NEW: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
     &6(%w2eloadded%), &a%w3%&b[%w3elo%] &6(%w3eloadded%) &aได้รับชัยชนะจาก %l1%&b[%l1elo%]
     &c(%l1eloadded%), %l2%&b[%l2elo%] &c(%l2eloadded%), &a%l3%&b[%l3elo%] &6(%l3eloadded%)
-    &aสำหรับทีม %team%'
-  BRODCAST_BATTLE1V1_WINNER_NOELO: '&a%winner% &aได้รับชัยชนะจาก %looser% &aสำหรับทีม
-    %team%'
-  BRODCAST_BATTLE2v2_WINNER_NOELO: '&a%w1% และ %w2% ได้รับชัยชนะจาก %l1% และ %l2%
-    สำหรับทีม %team%'
-  BRODCAST_BATTLE3v3_WINNER_NOELO: '&a%w1%, %w2%, %w3% ได้รับชัยชนะจาก %l1%, %l2%,
-    %l3% สำหรับทีม %team%'
+    &aที่เกิดเหตุ %arena%'
+  BRODCAST_BATTLE1V1_WINNER_NOELO_NEW: '&a%winner% &aได้รับชัยชนะจาก %looser% &aที่เกิดเหตุ
+    %arena%'
+  BRODCAST_BATTLE2v2_WINNER_NOELO_NEW: '&a%w1% และ %w2% &aได้รับชัยชนะจาก %l1% และ
+    %l2% &aที่เกิดเหตุ %arena%'
+  BRODCAST_BATTLE3v3_WINNER_NOELO_NEW: '&a%w1%, %w2%, %w3% &aได้รับชัยชนะจาก %l1%,
+    %l2%, %l3% &aที่เกิดเหตุ %arena%'
   SAVED_SCHEMATIC: '&aSchematic ถูกบันทึกแล้ว'
   WORLDEDIT_NOT_FOUND: '&Cไม่พบ WorldEdit'
   CITIZENS_NOT_FOUND: '&Cไม่พบ Citizens'
@@ -480,7 +480,7 @@ ThaiMessages:
   LORE_GUI_CREATOR: '&9ผู้สร้าง: %player%'
   LORE_GUI_QUEUE: '&9คิว: %players%/%maxplayers%'
   LORE_GUI_ARENA: '&9สนาม: %arena%'
-  LORE_GUI_GAMETYPE: '&9รูปแบบการประลอง: %type%'
+  LORE_GUI_GAMETYPE: '&9โหมดเกม: %type%'
   LORE_GUI_KIT: '&9Kits: %type%'
   LORE_GUI_KIT_NAME: '&9Kit Name: %name%'
   LORE_GUI_RANKED: '&9จัดอันดับ'
@@ -489,7 +489,7 @@ ThaiMessages:
   SCOREBOARD_INDIVDUAL_KIT: Kit ส่วนตัว
   ALLOWED_RULES_GUI: '&aอนุญาติ'
   DISALLOWED_RULES_GUI: '&cไม่อนุญาติ'
-  GAMETYPE_GUI: ประเภท
+  GAMETYPE_GUI: โหมดเกม
   YES_GUI_ITEM: '&bใช่'
   NO_GUI_ITEM: '&bไม่'
   INDIVIDUAL_GUI_ITEM: '&bส่วนตัว'
@@ -512,7 +512,7 @@ ThaiMessages:
   SOUP_MESSAGE: Soup
   SUMO_MESSAGE: Sumo
   ENABLED_MESSAGE: เปิดใช้งาน
-  DISABLED_MESSAGE: ไม่เปิดใช้งาน
+  DISABLED_MESSAGE: ปิดใช้งาน
   NOKITS_MESSAGE: '&4&Lไม่ใช้ Kits'
   INDIVIDUALKITS_MESSAGE: '&b&lKits ส่วนตัว'
   DUEL1V1_MESSAGE_START: '&8=================================='
@@ -554,3 +554,93 @@ ThaiMessages:
   KITEDITOR_SAVE: '&aKit ได้ถูกบันทึก'
   KITEDITOR_LEAVE: '&aคุณได้ออกจาก kit editor'
   KITEDITOR_SELECT: '&aคุณได้เลือก kit %kit%'
+  KOTH_GUI: '&bKoth'
+  SPLEEF_GUI: '&bSpleef'
+  BEDWARS_GUI: '&bBedWars'
+  SKYWARS_GUI: '&bSkyWars'
+  GAMEMODE_ELO: '&b%gamemode% Elo ของคุณคือ %amount%'
+  PVPBOTS_GUI_ITEM: '&bสู้กับบอท'
+  DUELPLAYERS_GUI_ITEM: '&bสู้กับผู้เล่นอื่น'
+  THREE_VS_THREE_GUI_ITEM: '&B3v3'
+  TWO_VS_TWO_GUI_ITEM: '&B2v2'
+  ONE_VS_ONE_GUI_ITEM: '&b1v1'
+  FFA_GUI_ITEM: '&BFFA'
+  EASY_GUI_ITEM: '&bง่าย'
+  NORMAL_GUI_ITEM: '&bปานกลาง'
+  HARD_GUI_ITEM: '&bยาก'
+  EXPERT_GUI_ITEM: '&bยากที่สุด'
+  RANKED_GUI_JOIN_ITEMS: '&b&lจัดอันดับ'
+  UNRANKED_GUI_JOIN_ITEMS: '&b&lไม่จัดอันดับ'
+  FFA_GUI_JOIN_ITEMS: '&a&lFFA'
+  PVPBOTS_GUI_JOIN_ITEMS: '&a&lสู้กับบอท'
+  DUELPLAYERS_GUI_JOIN_ITEMS: '&a&lสู้กับผู้เล่นอื่น'
+  SETTINGS_GUI_JOIN_ITEMS: '&e&lตั้งค่า'
+  KITEDITOR_GUI_JOIN_ITEMS: '&e&lตัวแก้ไข Kit'
+  SPLEEF_MESSAGE: Spleef
+  SKYWARS_MESSAGE: SkyWars
+  BEDWARS_MESSAGE: BedWars
+  KOTH_MESSAGE: Koth
+  NOT_FOR_GAMEMODE: '&cArena ที่คุณเลือกไม่สามารถเล่นกับ Gamemode นี้ได้'
+  CORNER_SET: '&eตั้งค่า Corner %num% แล้ว'
+  BED_SET: '&eตั้งค่า Bed %num% แล้ว'
+  NOT_A_BLOCK: '&cโปรดคลิ๊กบนบล็อค'
+  CLICK_A_BLOCK: '&Eโปรดคลิ๊กบนบล็อค'
+  NOT_BEDWARS_ARENA: '&EArena นี้ไม่สามารถใช้กับ Bedwar ได้'
+  NOT_KOTH_ARENA: '&EArena นี้ไม่สามารถใช้กับ koth ได้'
+  TITLE_GO: '&aเริ่ม!'
+  TITLE_TEAM_LOST: '&cทีมของคุณแพ้'
+  TITLE_TEAM_WON: '&aทีมของคุณชนะ'
+  TITLE_DIED: '&cคุณตาย'
+  SUBTITLE_ELIMINATED_BY: คุณถูกผู้เล่น %player% กำจัด
+  SUBTITLE_ELIMINATED: คุณถูกกำจัดแล้ว
+  TITLE_RESPAWNING: '&c&lกำลังกลับไปที่จุดเกิด'
+  SUBTITLE_RESPAWNING_TIME: คุณจะเกิดใหม่ใน %time% วินาที
+  KOTH_CAPTURED_TEAM: Team %team% &7ได้ยึดครอง KOTH
+  KOTH_CAPTURED_PLAYER: '%player% &7ได้ยึดครอง KOTH'
+  KOTH_LOST_CONTROL_TEAM: Team %team% &7เสียการปกครอง KOTH
+  KOTH_LOST_CONTROL_PLAYER: '%player% &7เสียการปกครอง KOTH'
+  PLAYER_KILLED_BY: '%player% &7ถูกสังหารโดย %killer%'
+  PLAYER_ELIMINATED_BY: '%player% &7ถูกกำจัดโดย %killer%'
+  PLAYER_DIED: '%player% &7ตาย'
+  PLAYER_ELIMINATED: '%player% &7ถูกกำจัด'
+  BED_DESTROYED_TITLE: '&c&lพังพินาศ'
+  BED_DESTROYED_SUBTITLE_SOLO: เตียงของคุณถูกทำลายโดยผู้เล่น %player%
+  BED_DESTROYED_SUBTITLE: เตียงของทีมคุณถูกทำลายโดยผู้เล่น %player%
+  BED_YOU_DESTROYED_TITLE: '&a&lพังพินาศ'
+  BED_YOU_DESTROYED_SUBTITLE_SOLO: คุณทำลายเตียงของ &f%player%
+  BED_YOU_DESTROYED_SUBTITLE: คุณทำลายเตียงของทีม &f%team%
+  BED_DESTROYED: '&7Team %team% &7ถูกทำลายโดยผู้เล่น %player%'
+  BED_DESTROYED_SOLO: เตียงของ %destroyedplayer% &7ถูกทำลายโดยผู้เล่น %player%
+  COMMANDS_IN_QUEUE: '&cคุณไม่สามารถใช้คำสั่งได้ในขณะรอคิว'
+  ENDERPEARL_COOLDOWN_ACTIONBAR: '&bCooldown: &c%cooldown% วินาที'
+  ENDERPEARL_COOLDOWN_TEXT: '&cคุณยังใช้ Enderpearl ไม่ได้'
+  NOT_BED: '&cนี่ไม่ใช่เตียง'
+  SELECTION_CANCEL: '&cการเลือกถูกยกเลิก'
+  LANGUAGE_RESET_ALL: '&aรีเซ็ตภาษาทั้งหมดเป็น %lang%'
+  TOTAL_KILLS_GUI: '&aTotal Kills: %amount%'
+  TOTAL_DEATHS_GUI: '&cTotal Deaths: %amount%'
+  TOTAL_WONS_GUI: '&aTotal Wons: %amount%'
+  TOTAL_LOSTS_GUI: '&cTotal Losts: %amount%'
+  TOTAL_ELO_GUI: '&eTotal Elo: %amount%'
+  MCDUELS_DISABLED: '&cMcDuels disabled'
+  MCDUELS_ENABLED: '&eMcDuels enabled'
+  ALL_STATS_RESET: '&eAll Stats Reset'
+  PLAYER_STATS_RESET: '&ePlayer %target% stats has been reset'
+  PLEASE_WAIT: '&ePlease Wait..'
+  RESET_PLAYER_ELO_NEW: '&aYour reset all %player% elo to its default amount'
+  GUI_ITEM_SET: '&eGUI Item Set'
+  REPLICATED_GAMEMODE_NOT_EXIST: '&cReplicated GameMode does not exist'
+  REPLICATED_GAMEMODE_EXIST: '&cReplicated GameMode exist'
+  GAMEMODE_NOT_EXIST: '&cThis GameMode does not exist'
+  NO_REPLICATED_GAMEMODE_FOUND: '&cNo Replicated GameMode found'
+  REPLICATED_GAMEMODE_CREATED: '&eReplicated GameMode %name% created'
+  REPLICATED_GAMEMODE_DELETED: '&eReplicated GameMode %name% deleted'
+  MUST_BE_INTEGER: '&cMust be an integer'
+  NEXT_PAGE_GUI: '&cNext Page'
+  PREVIOUS_PAGE_GUI: '&cPrevious Page'
+  PLAYERS_PAGE_GUI: '&CPlayers Page'
+  BOT_LEVEL_GUI: Bot Level
+  KIT_TYPE: Kit Type
+  CLICK_TO_JOIN: '&f&lClick To Join'
+  CLICK_TO_LEAVE: '&f&lClick To Leave'
+  TOP_STATS: '&a%number%: &f%name% &7- &a%amount%'

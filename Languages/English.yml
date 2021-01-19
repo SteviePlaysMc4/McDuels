@@ -68,7 +68,7 @@ EnglishMessages:
   PLAYER_LEFT_SPECPTATE: '&eYou are no longer spectating'
   TIMES_UP: '&ATime is up! There is no winner for this duel'
   SPECTATE_TIMES_UP: '&The duel has ended'
-  GAME_ENDED: '&CGame Ended'
+  GAME_ENDED: '&6Game Ended.'
   COMMANDSELF: '&cYou cannot send this command to yourself'
   TARGET_OFFLINE: '&cThe player is not online!'
   ONLY_PLAYERS_COMMAND: '&cOnly players can run this command'
@@ -143,7 +143,7 @@ EnglishMessages:
   NO_REQUEST: '&cYou have no pending request'
   GAME_SETTING: '&eChoose your Game Settings'
   KITS_QUESTION: '&eWould you like to use kits?'
-  NO_KITS: '&eNo kits avaiable'
+  NO_KITS: '&eNo kits available'
   KIT_CREATED: '&eKit %kitname% created'
   KIT_EXIST: '&eThere is already a kit with this name'
   KIT_NOT_FOUND: '&eKit not found'
@@ -234,7 +234,7 @@ EnglishMessages:
   PARTY2_DUELPARTY_DECLINE: '&e%party% has declined the challenge.'
   PARTY1_DUELPARTY_DECLINE: '&e%player% has declined the challenge'
   PLAYER_ALREADY_CHALLENGED: '&cThis player has already been challenged'
-  GOING_TO_CHALLENGE: '&cYou are going to be challenged. Please wait'
+  GOING_TO_CHALLENGE: '&cYou are going to be challenged by this player. Please wait'
   ITEM_NOT_ALLOW: '&cYou are not allowed to use this item.'
   SPY_OFF: '&eSpy toggled off'
   SPY_ON: '&eSpy toggled on'
@@ -334,22 +334,22 @@ EnglishMessages:
   ELO_RESTARTED: '&aAll players Elo has restarted'
   BRODCAST_DUEL1V1_WINNER_ELO: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%) &ahas
     won a match against %looser%&b[%looserelo%] &c(%loosereloadded%)&a at arena %arena%'
-  BRODCAST_BATTLE1V1_WINNER_ELO: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%) &ahas
-    won the game against %looser%&b[%looserelo%] &c(%loosereloadded%) &afor the %team%
-    Team'
-  BRODCAST_BATTLE2v2_WINNER_ELO: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
+  BRODCAST_BATTLE1V1_WINNER_ELO_NEW: '&a%winner%&b[%winnerelo%] &6(%winnereloadded%)
+    &ahas won the game against %looser%&b[%looserelo%] &c(%loosereloadded%) &aat arena
+    %arena%'
+  BRODCAST_BATTLE2v2_WINNER_ELO_NEW: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
     &6(%w2eloadded%) &ahas won the game against %l1%&b[%l1elo%] &c(%l1eloadded%),
-    &a%l2%&b[%l2elo%] &c(%l2eloadded%) &afor the %team% Team'
-  BRODCAST_BATTLE3v3_WINNER_ELO: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
+    &a%l2%&b[%l2elo%] &c(%l2eloadded%) &aat arena %arena%'
+  BRODCAST_BATTLE3v3_WINNER_ELO_NEW: '&a%w1%&b[%w1elo%] &6(%w1eloadded%), &a%w2%&b[%w2elo%]
     &6(%w2eloadded%), &a%w3%&b[%w3elo%] &6(%w3eloadded%) &ahas won the game against
     %l1%&b[%l1elo%] &c(%l1eloadded%), %l2%&b[%l2elo%] &c(%l2eloadded%), &a%l3%&b[%l3elo%]
-    &6(%l3eloadded%) &afor the %team% Team'
-  BRODCAST_BATTLE1V1_WINNER_NOELO: '&a%winner% &ahas won the game against %looser%
-    &afor the %team% Team'
-  BRODCAST_BATTLE2v2_WINNER_NOELO: '&a%w1% and %w2% has won the game against %l1%
-    and %l2% for the %team% Team'
-  BRODCAST_BATTLE3v3_WINNER_NOELO: '&a%w1%, %w2%, %w3% has won the game against %l1%,
-    %l2%, %l3% for the %team% Team'
+    &6(%l3eloadded%) &aat arena %arena%'
+  BRODCAST_BATTLE1V1_WINNER_NOELO_NEW: '&a%winner% &ahas won the game against %looser%
+    &aat arena %arena%'
+  BRODCAST_BATTLE2v2_WINNER_NOELO_NEW: '&a%w1% and %w2% &ahas won the game against
+    %l1% and %l2% &aat arena %arena%'
+  BRODCAST_BATTLE3v3_WINNER_NOELO_NEW: '&a%w1%, %w2%, %w3% &ahas won the game against
+    %l1%, %l2%, %l3% &aat arena %arena%'
   SAVED_SCHEMATIC: '&aSaved schematic'
   WORLDEDIT_NOT_FOUND: '&CWorldEdit not Found'
   CITIZENS_NOT_FOUND: '&CCitizens not Found'
@@ -469,7 +469,6 @@ EnglishMessages:
   GAMEKIND_NOT_EXIST: '&cGameKind not existing for arena %arena%'
   GAMEKIND_EXIST: '&cGameKind already exist for arena %arena%'
   GAMEKIND_REMOVED: '&aThe GameKind %gamekind% was removed from arena %arena%'
-  ENDERPEARL_COOLDOWN: '&cTime remaining: %cooldown% seconds'
   NOW_SPECTATING: '&BYou are now a spectator'
   'PLAYER_ALREADY_IN_A_GAME ': '&cThis player is already in another game'
   NEVER_PLAYED: '&cThis player has never played before'
@@ -490,9 +489,9 @@ EnglishMessages:
   UNRANKED_GUI: '&bUnranked'
   PVPBOTS_GUI_ITEM: '&bPvP Bots'
   DUELPLAYERS_GUI_ITEM: '&bDuel Players'
-  THREE_VS_THREE_GUI_ITEM: '&BThreeVsThree'
-  TWO_VS_TWO_GUI_ITEM: '&BTwoVsTwo'
-  ONE_VS_ONE_GUI_ITEM: '&bOneVsOne'
+  THREE_VS_THREE_GUI_ITEM: '&B3v3'
+  TWO_VS_TWO_GUI_ITEM: '&B2v2'
+  ONE_VS_ONE_GUI_ITEM: '&b1v1'
   FFA_GUI_ITEM: '&BFFA'
   EASY_GUI_ITEM: '&bEasy'
   NORMAL_GUI_ITEM: '&bNormal'
@@ -572,8 +571,8 @@ EnglishMessages:
   DUEL1V1_CHOOSE_KIT: '&bChoose a kit'
   DUEL1V1_SELECT_KIT: '&BYou selected kit %kit%'
   DUEL1V1_CLICK_SWITCH: '&BClick to switch to %type%'
-  PLAYERS_IN_QUEUE_MESSAGE: '&aPlayers In Queue&8:&7%amount%'
-  PLAYERS_IN_FIGHT_MESSAGE: '&aPlayers Fighting&8:&7%amount%'
+  PLAYERS_IN_QUEUE_MESSAGE: '&aPlayers In Queue&8: &7%amount%'
+  PLAYERS_IN_FIGHT_MESSAGE: '&aPlayers Fighting&8: &7%amount%'
   LOCKED_KIT: '&c&lLocked'
   LOCKED_KIT_PERMISSION: §cPermission Node:&c&l %permission%
   DUEL_NO_CLICK_ACCEPT: '&b/Duel accept to accept'
@@ -597,9 +596,67 @@ EnglishMessages:
   CLICK_A_BLOCK: '&EPlease click on a block'
   NOT_BEDWARS_ARENA: '&EThis is not a bedwars arena'
   NOT_KOTH_ARENA: '&EThis is not a koth arena'
-  TITLE_GAME_STARTS_IN: '&eGame Starts in'
   TITLE_GO: '&aGo!'
-  BED_DESTROYED_1: '&aRed Team Bed has been destroyed by %player%'
-  BED_DESTROYED_2: '&aBlue team bed has been destroyed by %player%'
-  KOTH_CAPTURED_1: '&aRed team captured KOTH'
-  KOTH_CAPTURED_2: '&aBlue team captured KOTH'
+  TITLE_TEAM_LOST: '&cYour Team Lost'
+  TITLE_TEAM_WON: '&aYour Team Won'
+  TITLE_DIED: '&cYou Died'
+  SUBTITLE_ELIMINATED_BY: You have been eliminated by %player%
+  SUBTITLE_ELIMINATED: You have been eliminated
+  TITLE_RESPAWNING: '&c&lRespawining'
+  SUBTITLE_RESPAWNING_TIME: You will respawn in %time% seconds
+  KOTH_CAPTURED_TEAM: Team %team% &7has captured the KOTH
+  KOTH_CAPTURED_PLAYER: '%player% &7has captured the KOTH'
+  KOTH_LOST_CONTROL_TEAM: Team %team% &7has lost control of the KOTH
+  KOTH_LOST_CONTROL_PLAYER: '%player% &7has lost control of the KOTH'
+  PLAYER_KILLED_BY: '%player% &7has been killed by %killer%'
+  PLAYER_ELIMINATED_BY: '%player% &7has been eliminated by %killer%'
+  PLAYER_DIED: '%player% &7died'
+  PLAYER_ELIMINATED: '%player% &7eliminated'
+  BED_DESTROYED_TITLE: '&c&lDestroyed'
+  BED_DESTROYED_SUBTITLE_SOLO: Your bed has been destroyed by %player%
+  BED_DESTROYED_SUBTITLE: Your team bed has been destroyed by %player%
+  BED_YOU_DESTROYED_TITLE: '&a&lDestroyed'
+  BED_YOU_DESTROYED_SUBTITLE_SOLO: You destroyed %player% &fbed
+  BED_YOU_DESTROYED_SUBTITLE: You destroyed %team% &fteam bed
+  BED_DESTROYED: '&7Team %team% &7has been destroyed by %player%'
+  BED_DESTROYED_SOLO: '%destroyedplayer% &7bed has been destroyed by %player%'
+  COMMANDS_IN_QUEUE: '&cYou can not use commands in queue'
+  ENDERPEARL_COOLDOWN_ACTIONBAR: '&bCooldown: &c%cooldown% seconds'
+  ENDERPEARL_COOLDOWN_TEXT: '&cYou can not use enderpearls yet'
+  NOT_BED: '&cThis is not a bed'
+  SELECTION_CANCEL: '&cSelection cancelled'
+  LANGUAGE_RESET_ALL: '&aAll Languages reset to %lang%'
+  TOTAL_KILLS_GUI: '&aTotal Kills: %amount%'
+  TOTAL_DEATHS_GUI: '&cTotal Deaths: %amount%'
+  TOTAL_WONS_GUI: '&aTotal Wons: %amount%'
+  TOTAL_LOSTS_GUI: '&cTotal Losts: %amount%'
+  TOTAL_ELO_GUI: '&eTotal Elo: %amount%'
+  MCDUELS_DISABLED: '&cMcDuels disabled'
+  MCDUELS_ENABLED: '&eMcDuels enabled'
+  ALL_STATS_RESET: '&eAll Stats Reset'
+  PLAYER_STATS_RESET: '&ePlayer %target% stats has been reset'
+  PLEASE_WAIT: '&ePlease Wait..'
+  RESET_PLAYER_ELO_NEW: '&aYour reset all %player% elo to its default amount'
+  GUI_ITEM_SET: '&eGUI Item Set'
+  REPLICATED_GAMEMODE_NOT_EXIST: '&cReplicated GameMode does not exist'
+  REPLICATED_GAMEMODE_EXIST: '&cReplicated GameMode exist'
+  GAMEMODE_NOT_EXIST: '&cThis GameMode does not exist'
+  NO_REPLICATED_GAMEMODE_FOUND: '&cNo Replicated GameMode found'
+  REPLICATED_GAMEMODE_CREATED: '&eReplicated GameMode %name% created'
+  REPLICATED_GAMEMODE_DELETED: '&eReplicated GameMode %name% deleted'
+  MUST_BE_INTEGER: '&cMust be an integer'
+  NEXT_PAGE_GUI: '&cNext Page'
+  PREVIOUS_PAGE_GUI: '&cPrevious Page'
+  PLAYERS_PAGE_GUI: '&CPlayers Page'
+  BOT_LEVEL_GUI: Bot Level
+  KIT_TYPE: Kit Type
+  CLICK_TO_JOIN: '&f&lClick To Join'
+  CLICK_TO_LEAVE: '&f&lClick To Leave'
+  TOP_STATS: '&a%number%: &f%name% &7- &a%amount%'
+  PARTY_VS_PARTY_ITEM: '&a&lParty Vs Party'
+  PARTY_BATTLE_ITEMS: '&a&lParty Battles'
+  PARTY_INFO_ITEM: '&e&lParty Info'
+  PARTY_CHAT_ITEM: '&e&lParty Chat'
+  PARTY_LEAVE_ITEMS: '&C&lParty Leave'
+  CAN_NOT_JOIN_GAME: '&CYou can not join a game whiles in a duel, use /duelparty toggle
+    to toggle off or /party leave'

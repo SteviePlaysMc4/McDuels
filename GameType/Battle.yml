@@ -13,5 +13,3 @@ GameTypeGUI:
   SkyWarsMode: true
   BedWarsMode: true
   KothMode: true
-EnableCommands:
-- msg

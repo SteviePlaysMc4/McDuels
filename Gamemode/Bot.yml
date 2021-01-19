@@ -1,7 +1,10 @@
-BuildModeEnabled: true
+BotModeEnabled: true
+BotSlotGUI: 9
+BotName: '&bBot'
+BotMaterial: IRON_SWORD
+OnlyPlayerBot: false
 HealthRegen: true
 HungerLoss: true
-BreakArenaBlocks: true
 CustomDamage: false
 DuelChatEnabled: true
 RemovePotionBottles: true
@@ -34,14 +37,8 @@ StartCountDown: 5
 EndCountDown: 120
 DisableCommands: true
 DisableItemDrop: true
-DisableItemPickUp: false
+DisableItemPickUp: true
 DisableFallDamage: false
-RankedOrUnrankedGUI:
-  Ranked: true
-  Unranked: true
-KitsGUI:
-  Kits: true
-  NoKits: true
-  IndividualKits: true
+SpectateEnableFly: true
 EnableCommands:
 - msg

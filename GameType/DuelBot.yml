@@ -4,5 +4,3 @@ RandomArenas: true
 DisableDuelBot1v1: false
 DisableDuelBot2v2: false
 DisableDuelBot3v3: false
-EnableCommands:
-- msg
